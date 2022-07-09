@@ -15,7 +15,7 @@ pipeline{
         stage("deploy"){
             steps{
                 echo "start push to tomcat container"
-                deploy adapters: [tomcat9(credentialsId: 'c4482657-4c2e-44f6-8249-eb091f87128a', path: '', url: 'http://localhost:8080/')], contextPath: 'SpringApp', onFailure: false, war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'c4482657-4c2e-44f6-8249-eb091f87128a', path: '', url: 'http://localhost:8080/')], contextPath: 'webjavademo', onFailure: false, war: '**/*.war'
             }
         }
     }
