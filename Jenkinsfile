@@ -4,8 +4,8 @@ pipeline{
         stage("build"){
             steps{
                 echo "--------------start build------------"
-                sh "rm -rf SpringApp"
-                sh "rm SpringApp.war"
+                // sh "rm -rf SpringApp"
+                // sh "rm SpringApp.war"
                 echo "the workspace is cleaned"
                 sh "mvn clean install"
                 echo "---------------build finished--------------------"
