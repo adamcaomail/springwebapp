@@ -4,7 +4,7 @@ pipeline{
         stage("build"){
             steps{
                 echo "--------------start build------------"
-                deleteDir()
+                
                 echo "the workspace is cleaned"
                 sh "mvn clean install"
                 echo "---------------build finished--------------------"
