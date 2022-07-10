@@ -14,10 +14,10 @@ http://localhost:8888
 set username password
 
 4.
-install dependencies
+install default plugins
 
 5.
-jenkins-manager => install deploy to container
+jenkins-manager => install plugin deploy to container
 
 6.
 create jenkins job
